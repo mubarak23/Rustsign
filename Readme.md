@@ -66,7 +66,7 @@ rustsign sign "your message here"
 
 example
 
-signet sign "Hello, Mubarak"
+rustsign sign "Hello, Mubarak"
 
 
 ✍️ Signature (base64): u+MHwZITj3+TLxWql6s1...
@@ -74,10 +74,10 @@ signet sign "Hello, Mubarak"
 
 ### ✅ Verify a Signature
 
-signet verify "your message here" "base64_signature"
+rustsign verify "your message here" "base64_signature"
 
 
-signet verify "Hello, Mubarak" "u+MHwZITj3+TLxWql6s1..."
+rustsign verify "Hello, Mubarak" "u+MHwZITj3+TLxWql6s1..."
 
 
 ✅ Signature is valid.
@@ -89,7 +89,7 @@ signet verify "Hello, Mubarak" "u+MHwZITj3+TLxWql6s1..."
 🔐 Security Notes
 Your private key is sensitive — keep keys/private.key safe and encrypted.
 
-Signet does not transmit any data and runs entirely offline.
+rustsign does not transmit any data and runs entirely offline.
 
 You can move keys between machines securely via encrypted file transfer.
 
