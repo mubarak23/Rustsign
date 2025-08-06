@@ -1,4 +1,4 @@
-use std::fs,
+use std::fs;
 use std::path::Path;
 use base64::{encode, decode};
 use anyhow::Result;
@@ -6,7 +6,7 @@ use anyhow::Result;
 
 pub fn write_file(path: &str, data: &[u8]) -> Result<()> {
   fs::write(path, data)?;
-  ok(())
+  Ok(())
 }
 
 
