@@ -45,7 +45,22 @@ cp target/release/rustsign ~/.cargo/bin/
 
 ### Usage
 ```
-rustsign <COMMAND> [ARGS]
+create a folder and name it keys
+
+```
+
+run the command 
+```
+cargo run generate
+
+```
+
+```
+Commands:
+  generate  
+  sign      
+  verify    
+  help 
 
 ```
 
@@ -60,13 +75,13 @@ rustsign generate
 
 ````
 
-rustsign sign "your message here"
+cargo run sign "your message here"
 
 ```
 
 example
 
-rustsign sign "Hello, Mubarak"
+cargo run sign "Hello, Mubarak"
 
 
 ✍️ Signature (base64): u+MHwZITj3+TLxWql6s1...
@@ -74,7 +89,7 @@ rustsign sign "Hello, Mubarak"
 
 ### ✅ Verify a Signature
 
-rustsign verify "your message here" "base64_signature"
+cargo run verify "your message here" "base64_signature"
 
 
 rustsign verify "Hello, Mubarak" "u+MHwZITj3+TLxWql6s1..."
